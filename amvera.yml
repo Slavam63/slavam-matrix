@@ -1,0 +1,11 @@
+entry: Makefile
+environment: default
+commands:
+  - name: deploy-all
+    run: make deploy-all
+  - name: adapt-manual
+    run: make adapt
+  - name: create-report
+    run: make report
+  - name: push-result
+    run: make push

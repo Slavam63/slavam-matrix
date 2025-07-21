@@ -1,0 +1,13 @@
+deploy-all:
+    python main.py
+    python scripts/linkedin_trigger.py
+    python scripts/faq_importer.py
+
+adapt:
+    python utils/ai_adapt.py
+
+report:
+    python reports/report_generator.py
+
+push:
+    python notifier.py
